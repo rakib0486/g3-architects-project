@@ -22,6 +22,7 @@
 .btn-style{
     background-color: #FF900E;  
     color: white;
+    font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
     padding: 20px 24px;
@@ -30,11 +31,15 @@
 .flex{
     display: flex;
 }
+section{
+    margin: 70px 0;
+}
 
 /* Header Styles */
 header{
     background-color: rgba(255, 144, 14, 0.1);
 }
+
 /* Nav Styles */
 .navbar{
     align-items: center;
@@ -76,17 +81,43 @@ header{
 .banner-desc{
     font-size: 1rem;
 }
-.banner-btn{
-    font-size: 1.25rem;
-    margin: 30px 0;
-}
 .banner-img{
     width: 100%;
     margin-bottom: 45px;
+    margin-top: 30px;
 }
+
+/* Main Styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Quick List Styles */
+.quick-list{
+    gap: 73px;
+    align-items: center;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-list-content{
+    max-width: 537px;
+}
+.quick-list-title{
+    font-size: 2.80rem;
+    margin-bottom: 24px;
+}
+.quick-list-desc{
+    margin-bottom: 32px;
+}
+
 /* Responsive For Mobile Devices */
 @media screen and (max-width: 700px) {
-    .navbar, .nav-links{
+    .navbar, 
+    .nav-links{
         flex-direction: column;
     }
 }
