@@ -204,6 +204,22 @@ main{
 .sponsors-img img{
     filter: grayscale(100%);
 }
+/* Footer Section Styles */
+footer{
+    background-color: #FFF4E7;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 38px 410px;
+}
+.footer-title{
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+.footer-title span{
+    display: block;
+    margin: 5px 0
+}
 
 /* Responsive For Mobile Devices */
 @media screen and (max-width: 700px) {
@@ -218,11 +234,17 @@ main{
     .sponsors-img{
         grid-template-columns: 1fr;
     }
+    .nav-links{
+        text-align: center;
+    }
     .features button{
         margin: 0;
     }
     .facts-container, .sponsors-img{
        justify-items: center;
        gap: 24px;
+    }
+    footer{
+        padding: 38px 0;
     }
 }
